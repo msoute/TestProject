@@ -1,0 +1,8 @@
+{
+  "name": "TestProject",
+  "description": "Just having some fun with CircleCI",
+  "license": "proprietary",
+  "require-dev": {
+    "phpunit/phpunit": "~5.2"
+  }
+}
