@@ -1,4 +1,6 @@
 <?php
+namespace Sander\TestProject;
+
 class Greeter
 {
   private $name;
