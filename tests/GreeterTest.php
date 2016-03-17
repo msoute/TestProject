@@ -1,4 +1,6 @@
 <?php
+use Sander\TestProject\Greeter;
+
 class GreeterTest extends PHPUnit_Framework_TestCase
 {
   function testEmptyConstructor()
