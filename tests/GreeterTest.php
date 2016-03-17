@@ -1,6 +1,4 @@
 <?php
-require 'src/Greeter.php';
-
 class GreeterTest extends PHPUnit_Framework_TestCase
 {
   function testEmptyConstructor()
