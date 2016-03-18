@@ -5,7 +5,7 @@ class Greeter
 {
   private $name;
 
-  function __construct($name = "World")
+  public function __construct($name = "World")
   {
       $this->name = $name;
   }
