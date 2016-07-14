@@ -9,10 +9,7 @@ deploy:
   access_key_id: AKIAJSXP4SRWRCPAUZHA
   secret_access_key: &1
     secure: nIJdTBmhKUilLUmpCk/yCrED0anJFsdOUfw8Jb62QMJ9DdZZZeSSL2J6MoN/ONCNgF39vKI5oc/sDwU0otJFqYyoYhaeLglXblYR5713QI00jvoE1hcjNDZLaQOyGPDroCNUSUXa/AG6eHu57+v7llIkECvV7LtbVSXEwTdFq0pKkyrrj3G/x1tcQ3csT4o0aG3eLGr5Kgh4pKeDHhU3Gtjfxoe6sXXwzt21tybBBxwFT8jXqXkTktzeeeMJioNrkp2tK2x5rSWhFm/YHcTZXnGoH9MPvNMt3xA+3FImQIPzlZIsqTDHyW9l5N2eXvpCAOtiqjQVjCGE0wsQHCaXvWSPTCHrkPpkM8LXae8hQE9IeKWq8PyTUsbEnssjsLMGb/6yRaDZ8TRa9Rm4D4+5+w/clYB3WExhWKpX4NM+V2WSOQT+N4hOxPqO4bMDalV3mvG9sJY8T2Ke/kr2Kkc5Tvr+/LMEJ7j1wSNZJFCkGyXejcnQXzu0YPHIi7zhk/n70qWzgtUlehQ1X9bEcOL7xp38W86TMOSpdujxVvglO3RUL9cxf6QyRxZvjkmzhx32VCV1ghi7hsmsOZwlL1GZRmViLDrxM1y/OFu0iAFn7K66byn/TsMbv3L8M2KVRYJ60d315JRnfWBEngClIWHDebYIW1+eG/aRjxdC9Bwz9oQ=
-  local_dir: dpl_cd_upload
   skip_cleanup: true
-  on: &2
-    repo: SanderKnape/TestProject
   bucket: testing-fn
 - provider: codedeploy
   access_key_id: AKIAJSXP4SRWRCPAUZHA
@@ -22,8 +19,4 @@ deploy:
   bundle_type: zip
   application: TestProject
   deployment_group: TestProjectDeploymentGroup
-  on: *2
   region: eu-west-1
-before_deploy:
-- mkdir -p dpl_cd_upload
-- mv TravisTestProject.zip dpl_cd_upload/TravisTestProject.zip
