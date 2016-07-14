@@ -9,7 +9,7 @@ before_script:
 script: vendor/bin/phpunit
 
 before_deploy:
-  - zip -r project *
+  - zip --output-file TestProject.zip -r project *
   - mkdir -p codedeploy_zip
   - mv TestProject.zip codedeploy_zip/TestProject.zip
 
