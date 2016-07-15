@@ -1,5 +1,10 @@
 version: 0.0
 os: linux
+
 files:
   - source: /
     destination: /var/www
+
+hooks:
+  ValidateService:
+    - location: bin/validate.sh
