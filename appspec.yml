@@ -6,5 +6,7 @@ files:
     destination: /var/www
 
 hooks:
+  BeforeInstall:
+    - location: bin/before.sh
   ValidateService:
     - location: bin/validate.sh
