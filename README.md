@@ -5,4 +5,4 @@ Testing CircleCI, CodeShip and Scrutinizer
 [![Build Status](https://img.shields.io/scrutinizer/build/g/sanderknape/testproject.svg?style=flat-square)]()
 [![Travis CI Build Status](https://travis-ci.org/SanderKnape/TestProject.svg?branch=master)]()
 
-Test PR
+Test PR2
